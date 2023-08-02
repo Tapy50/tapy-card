@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/php-info', function() {
     phpinfo();
 });
-
 Route::get('/add-pdf-category', function () {
     DB::table('pdf_categories')->truncate();
     \App\Models\PdfCategory::create([
